@@ -1,0 +1,81 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  padding: 20px;
+  background: linear-gradient(to right, #f0f0f0, #e0f7fa);
+  color: #333;
+}
+
+header {
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+.animate-header {
+  animation: fadeInDown 1.2s ease-in-out;
+}
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.form-section {
+  text-align: center;
+  margin: 30px 0;
+}
+
+.form-section input {
+  padding: 10px;
+  font-size: 16px;
+  width: 240px;
+  border: 2px solid #00bcd4;
+  border-radius: 5px;
+}
+
+.form-section button {
+  padding: 10px 15px;
+  font-size: 16px;
+  margin-left: 10px;
+  cursor: pointer;
+  transition: transform 0.3s, background 0.3s;
+  border: none;
+  background: #00bcd4;
+  color: white;
+  border-radius: 5px;
+}
+
+.form-section button:hover {
+  transform: scale(1.08);
+  background: #0097a7;
+}
+
+#username:focus {
+  outline: none;
+  border-color: #00796b;
+}
+
+.animated-box-section {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.box {
+  width: 100px;
+  height: 100px;
+  background-color: coral;
+  margin: 20px auto;
+  transition: transform 0.5s ease-in-out, background-color 0.3s;
+  border-radius: 10px;
+}
+
+.box.animate {
+  transform: rotate(720deg) scale(1.4);
+  background-color: #ff7043;
+}
